@@ -1,0 +1,68 @@
+.search_finances,
+.div_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 14px 0px;
+  margin: 5px 0px 0px 0px;
+}
+
+.div_year {
+  width: 50%;
+  height: 2em;
+}
+
+.div_year label,
+.div_month label,
+.div_name label {
+  font-size: 1.6em;
+}
+
+.input_search_month,
+.input_search_year,
+.input_search_name {
+  font-size: 1.8em;
+  width: 180px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  outline: 1px solid var(--color-header);
+  border: none;
+}
+
+.input_search_name {
+  width: 350px;
+}
+
+.btn_search {
+  font-size: 3em;
+  margin-right: 10px;
+  color: var(--color-header);
+  background-color: var(--color-body);
+  border: none;
+  transition: transform .5s ease-in-out;
+}
+
+.btn_search span {
+  display: none;
+}
+
+.btn_search:hover {
+  cursor: pointer;
+  background-color: none;
+  transform: rotateY(180deg);
+  transition: transform .5s ease-in-out;
+}
+
+option {
+  border-radius: 5px;
+}
+
+.nothing_found{
+  font-size: 1.2em;
+  color: rgb(170, 170, 170);
+  text-align: center;
+  padding-top: 40px;
+}

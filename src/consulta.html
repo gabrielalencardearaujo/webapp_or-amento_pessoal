@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Financeira</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style-search-page.css">
+
+   <!-- Font Awesome -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+   <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="./assets/img/logo.png" alt="Logo">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="./index.html">Mes atual</a>
+          </li>
+          <li class="current-tab">
+            <a href="./consulta.html">Historico</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Consultar Finanças</h3>
+
+      <h4>Consultar Transação</h4>
+      <hr>
+
+      <form action="" name="consulta">
+        <div class="search_finances">
+          <div class="div_year">
+            <label for="year">Ano:</label>
+            <select class="input_search_year" name="year" id="year" onblur="noFocus()">
+              <option value="">  </option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <div class="div_month">
+            <label for="month">Mês</label>
+            <select class="input_search_month" name="month" id="month">
+              <option value="">  </option>
+              <option value="0">Janeiro</option>
+              <option value="1">Fevereiro</option>
+              <option value="2">Março</option>
+              <option value="3">Abril</option>
+              <option value="4">Maio</option>
+              <option value="5">Junho</option>
+              <option value="6">Julho</option>
+              <option value="7">Agosto</option>
+              <option value="8">Setembro</option>
+              <option value="9">Outubro</option>
+              <option value="10">Novembro</option>
+              <option value="11">Dezembro</option>
+            </select>
+          </div>
+        </div>
+        <div class="div_name">
+          <div>
+            <label for="name">Nome:</label>
+            <select class="input_search_name" name="name" id="name_transition">
+              <option value=""> </option>
+            </select>
+          </div>
+          <button class="btn_search" type="submit" name="submit-search" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Pesquisar</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <div class="transacoes">
+        <h4>Transações Encontradas</h4>
+        <hr>
+        
+      </div>
+    </section>
+
+  </div> <!-- Fim DIV container-->
+
+
+  <script src="./assets/js/search.js"></script>
+</body>
+
+</html>

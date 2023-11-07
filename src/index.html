@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Despesas - Mobile</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+
+  <!--Style sheet-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body onload="loadtransactionsJSON()">
+  <div class="container">
+    <header class="header">
+      <img src="./assets/img/logo.png" alt="Logo">
+      <nav class="menu">
+        <ul>
+          <li class="current-tab">
+            <a href="./index.html">Mes atual</a>
+          </li>
+          <li>
+            <a href="./consulta.html">Historico</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div>
+        <h3>Controle Financeiro</h3>
+      </div>
+      <div class="saldo_atual">
+        <p>SALDO ATUAL</p>
+        <span id="valor_saldo_atual">R$ 0</span>
+      </div>
+
+      <div class="receitas_despesas">
+        <div>
+          <p>RECEITAS</p>
+          <p class="valor_receita">R$ 0</p>
+        </div>
+        <hr class="hr_receitas">
+        <div>
+          <p>DESPESAS</p>
+          <p class="valor_despesas">R$ 0</p>
+        </div>
+      </div>
+
+      <div class="nova_transacao">
+        <forms action="/" name="newTransition">
+          <h4>Nova Transaçao</h4>
+          <hr>
+          <div class="nome_transacao">
+            <label for="name">Nome:</label>
+            <input class="input_nome" type="text" id="name" placeholder="Nome da transacao" required="required">
+          </div>
+          <div class="valor">
+            <label for="valor_transacao">Valor: (positivo: receitas | negativo: despesas)</label>
+            <input class="input_valor" type="number" id="valor" placeholder="Valor da transacao" required="required">
+          </div>
+          <div class="data_transacao">
+            <label for="data">Data da transacao:</label>
+            <input class="input_data" type="date" id="data" required="required">
+          </div>
+          <button class="btn" type="submit" onclick="newtransaction()">Adicionar</button>
+        </forms>
+      </div>
+
+      <div class="transacoes">
+        <h4>Transações de <span class="date"></span></h4>
+        <hr>
+      </div>
+    </section>
+
+  </div>
+
+  
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
